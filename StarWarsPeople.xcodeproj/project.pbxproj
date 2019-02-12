@@ -20,7 +20,6 @@
 		0380CEC9221282860031427D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0380CEC7221282860031427D /* Main.storyboard */; };
 		0380CECB221282870031427D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0380CECA221282870031427D /* Assets.xcassets */; };
 		0380CECE221282870031427D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0380CECC221282870031427D /* LaunchScreen.storyboard */; };
-		0380CED9221282870031427D /* StarWarsPeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380CED8221282870031427D /* StarWarsPeopleTests.swift */; };
 		0380CEE4221282870031427D /* StarWarsPeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380CEE3221282870031427D /* StarWarsPeopleUITests.swift */; };
 		0380CEF2221283310031427D /* SWAPIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380CEF1221283310031427D /* SWAPIAdapter.swift */; };
 		0380CEF422129E4E0031427D /* SWAPIAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380CEF322129E4E0031427D /* SWAPIAdapterTests.swift */; };
@@ -68,7 +67,6 @@
 		0380CECD221282870031427D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0380CECF221282870031427D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0380CED4221282870031427D /* StarWarsPeopleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsPeopleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0380CED8221282870031427D /* StarWarsPeopleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleTests.swift; sourceTree = "<group>"; };
 		0380CEDA221282870031427D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0380CEDF221282870031427D /* StarWarsPeopleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsPeopleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0380CEE3221282870031427D /* StarWarsPeopleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleUITests.swift; sourceTree = "<group>"; };
@@ -139,6 +137,7 @@
 				032020492213265A0065E421 /* SWAPIAdapterInterface.swift */,
 				032020472213261E0065E421 /* PeopleClient.swift */,
 				0320204B22132CF80065E421 /* PeopleClientInterface.swift */,
+				0320203D221322FE0065E421 /* String+Error.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -186,7 +185,6 @@
 				0380CECA221282870031427D /* Assets.xcassets */,
 				0380CECC221282870031427D /* LaunchScreen.storyboard */,
 				0380CECF221282870031427D /* Info.plist */,
-				0320203D221322FE0065E421 /* String+Error.swift */,
 			);
 			path = StarWarsPeople;
 			sourceTree = "<group>";
@@ -194,7 +192,6 @@
 		0380CED7221282870031427D /* StarWarsPeopleTests */ = {
 			isa = PBXGroup;
 			children = (
-				0380CED8221282870031427D /* StarWarsPeopleTests.swift */,
 				03EC93CD221352B700CA88A3 /* MasterDataSourceTests.swift */,
 				0380CEF322129E4E0031427D /* SWAPIAdapterTests.swift */,
 				03EC93D5221365C600CA88A3 /* Mocks */,
@@ -279,7 +276,7 @@
 				0380CEBA221282860031427D /* Sources */,
 				0380CEBB221282860031427D /* Frameworks */,
 				0380CEBC221282860031427D /* Resources */,
-				43AB71A7FEE99411A358402A /* [CP] Embed Pods Frameworks */,
+				A4D2E867330B20A4D42C64ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -423,28 +420,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StarWarsPeopleTests/Pods-StarWarsPeopleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		43AB71A7FEE99411A358402A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StarWarsPeople/Pods-StarWarsPeople-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StarWarsPeople/Pods-StarWarsPeople-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4CF8B255EDC97C8FCB7B5C4B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,6 +440,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4D2E867330B20A4D42C64ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StarWarsPeople/Pods-StarWarsPeople-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StarWarsPeople/Pods-StarWarsPeople-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E33AF6830C7D6265090E98D2 /* [CP] Check Pods Manifest.lock */ = {
@@ -538,7 +535,6 @@
 			files = (
 				03EC93D0221355D800CA88A3 /* TestPeople.swift in Sources */,
 				0380CEF422129E4E0031427D /* SWAPIAdapterTests.swift in Sources */,
-				0380CED9221282870031427D /* StarWarsPeopleTests.swift in Sources */,
 				03EC93CE221352B700CA88A3 /* MasterDataSourceTests.swift in Sources */,
 				03EC93D22213658700CA88A3 /* PeopleClientMock.swift in Sources */,
 			);

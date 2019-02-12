@@ -1,0 +1,1288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004A74CA4395C8EC4E3630F5CDAF471C /* OHHTTPStubsMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 23966B7078A64DB619F31FC10091F9AE /* OHHTTPStubsMethodSwizzling.m */; };
+		009608F082889DED7CC3764915B3641E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57010B1F532490AE7D967B1BFB0B76D1 /* Security.framework */; };
+		0099583816E484A850740FA57873BF01 /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = FD223CFDFEFABF328AD6138CF2E874BA /* SAMKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		12D996026216DBA7097BD3780D43CA6C /* OHHTTPStubs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B4B43B61706FDB8379278F0D4B8DD /* OHHTTPStubs-dummy.m */; };
+		1C1A09CBA731D500461E08A8D4996717 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4401E344D9B0F5E42514B0E41E08FDCC /* Foundation.framework */; };
+		202477F04C14A14594E1B53C6DDECE99 /* OHHTTPStubs.h in Headers */ = {isa = PBXBuildFile; fileRef = 474302D5FC9C3825BB883604312277CC /* OHHTTPStubs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21BBCE7C08C4CE2FE17D72FE211E6536 /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5F7720AA524E003D92853BE33B3FD /* OHHTTPStubsSwift.swift */; };
+		317BC15B81F9550DBBA258201FB979C7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4FAF7439CFFE61363555A8BE62C017 /* CFNetwork.framework */; };
+		31BA4909DF65B6A1F79EAACC5D6AE45C /* SAMKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2755AF68CB3909AA0396A18B10BE29DC /* SAMKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		343AEECF9B467F9B476B135CA6DD4835 /* OHPathHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A9BAB405A65FD8AD6E749F719E10EC /* OHPathHelpers.m */; };
+		3C5379FA9AC4F918BA5CE69736605EB9 /* SAMKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F407F9AC2E69CAC3DDF29E0F6E569 /* SAMKeychain-dummy.m */; };
+		422874D2E8FB93B52A2C7032EB9FFDD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4401E344D9B0F5E42514B0E41E08FDCC /* Foundation.framework */; };
+		42FFCF3626A2DCF45281BDA0ED0D56F6 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0367B246C00E4732A0F479841AA27617 /* OHHTTPStubs+NSURLSessionConfiguration.m */; };
+		457F99DF18D792E3FFF5CB0C6C89F3D4 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C24AC83E21703966B46DD4B9B385D1 /* SAMKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4A39A4B78035E8D6DAD93CC24381B5A0 /* OHHTTPStubsMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFDFA13CC1B0C6CF66703AF63E1166C /* OHHTTPStubsMethodSwizzling.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4DE08A5AD46A59C6FD54D6C92FDF5EF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4401E344D9B0F5E42514B0E41E08FDCC /* Foundation.framework */; };
+		4EF684539C61A28A54781C4968ECB607 /* Pods-StarWarsPeopleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24EC4FAF43A0A5A944DC12A8105F571E /* Pods-StarWarsPeopleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		509BD9F2CAC137497BF1A3C14E4CC077 /* OHHTTPStubsResponse+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 7885A48783B5BD0B903BC842D749A00D /* OHHTTPStubsResponse+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		510F88CDBEE47F465FC35D0F54290D7C /* OHHTTPStubsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E74BD7D47C31FE41A948D5E53F8381 /* OHHTTPStubsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		630CC61CD8E8D3FCA2ECD2EB11BD2351 /* Pods-StarWarsPeopleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8D8ABD4F0FD0C24BFC7B916045292E /* Pods-StarWarsPeopleUITests-dummy.m */; };
+		693D679E85F65B306E9B8F6150AC2EDC /* NSURLRequest+HTTPBodyTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A28F4F04C9CE73061573B0195A831F7 /* NSURLRequest+HTTPBodyTesting.m */; };
+		782BB86ED5055BB7C9B066D529FE6B2E /* SAMKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = B034DCC59C3226FED6923F9D06AE94C2 /* SAMKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83473C87CA0CA01D74C321662F5D0D03 /* SAMKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 190BD9719E3F746D5B87396ACA56DF13 /* SAMKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F220ACA207A8BC3E0814BAF4DD0E912 /* Pods-StarWarsPeopleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE41B7347497525A2A29AD5F176B621 /* Pods-StarWarsPeopleTests-dummy.m */; };
+		A43D16ED88A2EB9E1E8F8D34877DFBAC /* OHHTTPStubsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF11D9F6FA31E4C8057E7510B762C23 /* OHHTTPStubsResponse.m */; };
+		AE916FD2B10B5C26E379ED127AFD1997 /* Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 593FB37913F2CE90A727A365F29795D1 /* Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2A5DCD86ABD6E208D51E43FE6985C43 /* OHHTTPStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = A0593AF3A036A6F115A59472ED6493E7 /* OHHTTPStubs.m */; };
+		BCEFAA7AD59E8F3D1A500EEDA78427E3 /* Pods-StarWarsPeople-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 059625BD998D059DCBE5725DAAA9A673 /* Pods-StarWarsPeople-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D25C0249782213EBD8F08D11389D4474 /* OHHTTPStubsResponse+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FC06896CCF675EF5FB64E363A4BAB8 /* OHHTTPStubsResponse+JSON.m */; };
+		D4CF2B33BFE492AFE2ECDF0F91921A6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4401E344D9B0F5E42514B0E41E08FDCC /* Foundation.framework */; };
+		D8A3FCC2A4F53B4D2DCF564783E34FDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4401E344D9B0F5E42514B0E41E08FDCC /* Foundation.framework */; };
+		D8E53462EF04A9CE8818119F299D8E4A /* Pods-StarWarsPeopleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F56D172039A1650FE7C300E15A3F802E /* Pods-StarWarsPeopleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBFAE0EAC6127AF4943957BD8EBA1635 /* SAMKeychain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAE210435E8252119DD0DD066C31F868 /* SAMKeychain.bundle */; };
+		E18DD994B66F6EE70E1EB83367683324 /* Pods-StarWarsPeople-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECF15CB00D1F4AB8740E3DD8C8050EA /* Pods-StarWarsPeople-dummy.m */; };
+		EB329EF68B9E249E32D39AEF0C95A16D /* NSURLRequest+HTTPBodyTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6FB1EFF0FA19098095BEE565038C30 /* NSURLRequest+HTTPBodyTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC482A1E6054FD0A6A54551E9236C6C8 /* OHHTTPStubs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC8BA4E044361FFB24B132B111410B2 /* OHHTTPStubs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEB50E7D731934CE2B0E4A19CB2ED8FB /* OHPathHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 141BD40F3CEC4F9C248D45554B52EAD9 /* OHPathHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0952CF22F7672F80F85417582E23ACD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DCCEE6F62617BD49795ACB4AEA152C;
+			remoteInfo = OHHTTPStubs;
+		};
+		6BF306D3C980F5B198BDCB4616E1A58D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC2D784CC1515B93562F634D903F4FF4;
+			remoteInfo = "Pods-StarWarsPeople";
+		};
+		E887E9791AFDC01EF5769C8B5253CC81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECDD3751C53F4F1B9E8A5FF45D6EB879;
+			remoteInfo = SAMKeychain;
+		};
+		F5017EB0D01FF72EB4D5769DFAB3D42B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC2D784CC1515B93562F634D903F4FF4;
+			remoteInfo = "Pods-StarWarsPeople";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0367B246C00E4732A0F479841AA27617 /* OHHTTPStubs+NSURLSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubs+NSURLSessionConfiguration.m"; path = "OHHTTPStubs/Sources/NSURLSession/OHHTTPStubs+NSURLSessionConfiguration.m"; sourceTree = "<group>"; };
+		03C37EFF87B24D2F17053BEA93FE982E /* Pods-StarWarsPeople-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StarWarsPeople-frameworks.sh"; sourceTree = "<group>"; };
+		059625BD998D059DCBE5725DAAA9A673 /* Pods-StarWarsPeople-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StarWarsPeople-umbrella.h"; sourceTree = "<group>"; };
+		0AC2A9255855C1FBBB840FCD4B6C8D9F /* Pods-StarWarsPeopleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StarWarsPeopleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C6B42A8E54EBFC7B93B287F46C06C3B /* Pods-StarWarsPeopleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StarWarsPeopleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0ECF15CB00D1F4AB8740E3DD8C8050EA /* Pods-StarWarsPeople-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StarWarsPeople-dummy.m"; sourceTree = "<group>"; };
+		11AE4DBD59BD164F4B7E0FE0E43A755B /* Pods-StarWarsPeopleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StarWarsPeopleUITests.modulemap"; sourceTree = "<group>"; };
+		13E74BD7D47C31FE41A948D5E53F8381 /* OHHTTPStubsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsResponse.h; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.h; sourceTree = "<group>"; };
+		141BD40F3CEC4F9C248D45554B52EAD9 /* OHPathHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHPathHelpers.h; path = OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.h; sourceTree = "<group>"; };
+		16FA21963B522C2499C8E99163848A47 /* Pods-StarWarsPeopleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StarWarsPeopleUITests-resources.sh"; sourceTree = "<group>"; };
+		190BD9719E3F746D5B87396ACA56DF13 /* SAMKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMKeychainQuery.h; path = Sources/SAMKeychainQuery.h; sourceTree = "<group>"; };
+		1A28F4F04C9CE73061573B0195A831F7 /* NSURLRequest+HTTPBodyTesting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+HTTPBodyTesting.m"; path = "OHHTTPStubs/Sources/NSURLSession/NSURLRequest+HTTPBodyTesting.m"; sourceTree = "<group>"; };
+		1A4FAF7439CFFE61363555A8BE62C017 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		20A1F986C9AC82550AB9D28E430EC6C2 /* OHHTTPStubs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHHTTPStubs.xcconfig; sourceTree = "<group>"; };
+		23966B7078A64DB619F31FC10091F9AE /* OHHTTPStubsMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsMethodSwizzling.m; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.m; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		244CC3121CEFB209DD242C38F4933B86 /* Pods-StarWarsPeopleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StarWarsPeopleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24EC4FAF43A0A5A944DC12A8105F571E /* Pods-StarWarsPeopleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StarWarsPeopleTests-umbrella.h"; sourceTree = "<group>"; };
+		267B2717EFE364F3E0D1838EE66BB1F0 /* Pods-StarWarsPeople.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StarWarsPeople.release.xcconfig"; sourceTree = "<group>"; };
+		2755AF68CB3909AA0396A18B10BE29DC /* SAMKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMKeychain-umbrella.h"; sourceTree = "<group>"; };
+		36A9BAB405A65FD8AD6E749F719E10EC /* OHPathHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHPathHelpers.m; path = OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.m; sourceTree = "<group>"; };
+		4401E344D9B0F5E42514B0E41E08FDCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		46E5F7720AA524E003D92853BE33B3FD /* OHHTTPStubsSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OHHTTPStubsSwift.swift; path = OHHTTPStubs/Sources/Swift/OHHTTPStubsSwift.swift; sourceTree = "<group>"; };
+		474302D5FC9C3825BB883604312277CC /* OHHTTPStubs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubs.h; path = OHHTTPStubs/Sources/OHHTTPStubs.h; sourceTree = "<group>"; };
+		4AED570BAB553E08230E075ED51F7BC1 /* Pods-StarWarsPeopleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StarWarsPeopleTests-resources.sh"; sourceTree = "<group>"; };
+		4CF9669EF3C1EB3A14C7141549872080 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D3876778DC66C39FF9923DA80294F7 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OHHTTPStubs.framework; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FEEF0ECA913195404694E29BC71EEB /* Pods-StarWarsPeopleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StarWarsPeopleTests.release.xcconfig"; sourceTree = "<group>"; };
+		54C24AC83E21703966B46DD4B9B385D1 /* SAMKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMKeychain.m; path = Sources/SAMKeychain.m; sourceTree = "<group>"; };
+		57010B1F532490AE7D967B1BFB0B76D1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		572098ECCC15A63A7BDD8BF0EFBE1E54 /* Pods-StarWarsPeopleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StarWarsPeopleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57BEB7BEDC9F298683CA42F04D32A05C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587BA085ED1F37C51A38C2A8AAD71B93 /* OHHTTPStubs-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-prefix.pch"; sourceTree = "<group>"; };
+		593FB37913F2CE90A727A365F29795D1 /* Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Compatibility.h; path = OHHTTPStubs/Sources/Compatibility.h; sourceTree = "<group>"; };
+		60EE193DF8F3C7E7F3D26198B426E257 /* Pods_StarWarsPeopleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StarWarsPeopleTests.framework; path = "Pods-StarWarsPeopleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63404D1686EB6A7D6C7A29BDD0BD6621 /* Pods-StarWarsPeopleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StarWarsPeopleTests-frameworks.sh"; sourceTree = "<group>"; };
+		67568024A5D11F3C99C5F95B12014C4E /* Pods_StarWarsPeopleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StarWarsPeopleUITests.framework; path = "Pods-StarWarsPeopleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		684F407F9AC2E69CAC3DDF29E0F6E569 /* SAMKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAMKeychain-dummy.m"; sourceTree = "<group>"; };
+		68A2789F5A0A82CCF87A8D73ADD8C0FC /* Pods-StarWarsPeople-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StarWarsPeople-resources.sh"; sourceTree = "<group>"; };
+		77CC7FA5A13C280C72F214A1DFCF49DB /* OHHTTPStubs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OHHTTPStubs.modulemap; sourceTree = "<group>"; };
+		7885A48783B5BD0B903BC842D749A00D /* OHHTTPStubsResponse+JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OHHTTPStubsResponse+JSON.h"; path = "OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.h"; sourceTree = "<group>"; };
+		79F39F8C60A7D52CCDEF65EB3BC91A5C /* Pods-StarWarsPeopleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StarWarsPeopleTests.modulemap"; sourceTree = "<group>"; };
+		8BC8BA4E044361FFB24B132B111410B2 /* OHHTTPStubs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-umbrella.h"; sourceTree = "<group>"; };
+		8F85DD959BE965D96EC89BE05B840CF0 /* Pods-StarWarsPeople.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StarWarsPeople.debug.xcconfig"; sourceTree = "<group>"; };
+		90A20B8FD5E5FF456701ACCEAEB0A577 /* Pods-StarWarsPeople.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StarWarsPeople.modulemap"; sourceTree = "<group>"; };
+		92E412F788EC556E11E99F5C1E21810B /* SAMKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SAMKeychain.framework; path = SAMKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BA770263C6AE437552A317ED99229D /* Pods-StarWarsPeopleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StarWarsPeopleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		981B4B43B61706FDB8379278F0D4B8DD /* OHHTTPStubs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHHTTPStubs-dummy.m"; sourceTree = "<group>"; };
+		9E4C6DF48D4EE0970680D6C313123408 /* Pods-StarWarsPeople-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StarWarsPeople-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A0593AF3A036A6F115A59472ED6493E7 /* OHHTTPStubs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubs.m; path = OHHTTPStubs/Sources/OHHTTPStubs.m; sourceTree = "<group>"; };
+		A1CEA8A341DA050836B9E28CCFD622EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE210435E8252119DD0DD066C31F868 /* SAMKeychain.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SAMKeychain.bundle; path = Support/SAMKeychain.bundle; sourceTree = "<group>"; };
+		ABAD27271A7BA171A5A2F24669DDE6EF /* Pods-StarWarsPeopleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StarWarsPeopleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B034DCC59C3226FED6923F9D06AE94C2 /* SAMKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMKeychain.h; path = Sources/SAMKeychain.h; sourceTree = "<group>"; };
+		B182B5B0F3F39F7BEEC800C794242188 /* SAMKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAMKeychain.xcconfig; sourceTree = "<group>"; };
+		C0FC06896CCF675EF5FB64E363A4BAB8 /* OHHTTPStubsResponse+JSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubsResponse+JSON.m"; path = "OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.m"; sourceTree = "<group>"; };
+		C3B5D843F0496B6F6A3A02B5A86308EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C633DF59A455C5057688A596209513DC /* SAMKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAMKeychain-prefix.pch"; sourceTree = "<group>"; };
+		C8A421F47A07EF06EF4E2471C91D8569 /* Pods_StarWarsPeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StarWarsPeople.framework; path = "Pods-StarWarsPeople.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE9C627699F4CDA12FA74CD415EFFAF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEAB696143A4F71BC6FE693F970A48F8 /* Pods-StarWarsPeople-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StarWarsPeople-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4AD3B0B872EA9D34E75F426A8995BAE /* SAMKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SAMKeychain.modulemap; sourceTree = "<group>"; };
+		E8295234D456B292653110E779ACE732 /* Pods-StarWarsPeopleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StarWarsPeopleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ECE41B7347497525A2A29AD5F176B621 /* Pods-StarWarsPeopleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StarWarsPeopleTests-dummy.m"; sourceTree = "<group>"; };
+		EDF11D9F6FA31E4C8057E7510B762C23 /* OHHTTPStubsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsResponse.m; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.m; sourceTree = "<group>"; };
+		EE8D8ABD4F0FD0C24BFC7B916045292E /* Pods-StarWarsPeopleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StarWarsPeopleUITests-dummy.m"; sourceTree = "<group>"; };
+		F56D172039A1650FE7C300E15A3F802E /* Pods-StarWarsPeopleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StarWarsPeopleUITests-umbrella.h"; sourceTree = "<group>"; };
+		F7A13EDAD7A491AD04ABECE149844AD3 /* Pods-StarWarsPeopleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StarWarsPeopleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FA6FB1EFF0FA19098095BEE565038C30 /* NSURLRequest+HTTPBodyTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+HTTPBodyTesting.h"; path = "OHHTTPStubs/Sources/NSURLSession/NSURLRequest+HTTPBodyTesting.h"; sourceTree = "<group>"; };
+		FAFDFA13CC1B0C6CF66703AF63E1166C /* OHHTTPStubsMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsMethodSwizzling.h; path = OHHTTPStubs/Sources/NSURLSession/OHHTTPStubsMethodSwizzling.h; sourceTree = "<group>"; };
+		FD223CFDFEFABF328AD6138CF2E874BA /* SAMKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SAMKeychainQuery.m; path = Sources/SAMKeychainQuery.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		150DB227478C4333692C3DA07BD1A902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CF2B33BFE492AFE2ECDF0F91921A6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1843D0410E7BCBAA54FE8138B696DBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE08A5AD46A59C6FD54D6C92FDF5EF5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0F341E8A81FE092A67DAA5A4574481E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A3FCC2A4F53B4D2DCF564783E34FDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6BF615549024DC3F44A70B73DCA5F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C1A09CBA731D500461E08A8D4996717 /* Foundation.framework in Frameworks */,
+				009608F082889DED7CC3764915B3641E /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC48D1EB19432A127D8A8D79442DD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317BC15B81F9550DBBA258201FB979C7 /* CFNetwork.framework in Frameworks */,
+				422874D2E8FB93B52A2C7032EB9FFDD7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1F9A3C8223CA8EC4500BCA7100DE71E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1713B94D656BC02FE17305C132DE40B6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE9C627699F4CDA12FA74CD415EFFAF2 /* Info.plist */,
+				77CC7FA5A13C280C72F214A1DFCF49DB /* OHHTTPStubs.modulemap */,
+				20A1F986C9AC82550AB9D28E430EC6C2 /* OHHTTPStubs.xcconfig */,
+				981B4B43B61706FDB8379278F0D4B8DD /* OHHTTPStubs-dummy.m */,
+				587BA085ED1F37C51A38C2A8AAD71B93 /* OHHTTPStubs-prefix.pch */,
+				8BC8BA4E044361FFB24B132B111410B2 /* OHHTTPStubs-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OHHTTPStubs";
+			sourceTree = "<group>";
+		};
+		2223A69ED8562D0C403CD3292A2C6AF2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D88BFA086E2D2614955590377402A5CA /* Pods-StarWarsPeople */,
+				D799B6A43F27A1E65C7A8510065FB51E /* Pods-StarWarsPeopleTests */,
+				B1BB0CAE9EE1285902863D421570B9A3 /* Pods-StarWarsPeopleUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		254AFA472AC03F6D29AD59E16089293D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				593FB37913F2CE90A727A365F29795D1 /* Compatibility.h */,
+				474302D5FC9C3825BB883604312277CC /* OHHTTPStubs.h */,
+				A0593AF3A036A6F115A59472ED6493E7 /* OHHTTPStubs.m */,
+				13E74BD7D47C31FE41A948D5E53F8381 /* OHHTTPStubsResponse.h */,
+				EDF11D9F6FA31E4C8057E7510B762C23 /* OHHTTPStubsResponse.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		2DD1075585FF977748DB9B307CBD287C /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				46E5F7720AA524E003D92853BE33B3FD /* OHHTTPStubsSwift.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		32283F9C93DF1566FDF75EEC1223BCBE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3B5D843F0496B6F6A3A02B5A86308EB /* Info.plist */,
+				E4AD3B0B872EA9D34E75F426A8995BAE /* SAMKeychain.modulemap */,
+				B182B5B0F3F39F7BEEC800C794242188 /* SAMKeychain.xcconfig */,
+				684F407F9AC2E69CAC3DDF29E0F6E569 /* SAMKeychain-dummy.m */,
+				C633DF59A455C5057688A596209513DC /* SAMKeychain-prefix.pch */,
+				2755AF68CB3909AA0396A18B10BE29DC /* SAMKeychain-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SAMKeychain";
+			sourceTree = "<group>";
+		};
+		4A4796BDE21A11CBACEEC74E40A9C32F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				719B12FCAD7F7117E2ADBE2BCC8F1127 /* OHHTTPStubs */,
+				F02390ED9D12E0A941E8E1F181833770 /* SAMKeychain */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		719B12FCAD7F7117E2ADBE2BCC8F1127 /* OHHTTPStubs */ = {
+			isa = PBXGroup;
+			children = (
+				254AFA472AC03F6D29AD59E16089293D /* Core */,
+				93E5D5933DA85D431E0C4397C69A7ACE /* JSON */,
+				C67C8582E51C8F38B560B6B4680D8C6C /* NSURLSession */,
+				AB9B6554419BF1F6A0896975B2D69AA5 /* OHPathHelpers */,
+				1713B94D656BC02FE17305C132DE40B6 /* Support Files */,
+				2DD1075585FF977748DB9B307CBD287C /* Swift */,
+			);
+			name = OHHTTPStubs;
+			path = OHHTTPStubs;
+			sourceTree = "<group>";
+		};
+		93D28621BB3454A061DFE3B7DEF23995 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D3876778DC66C39FF9923DA80294F7 /* OHHTTPStubs.framework */,
+				C8A421F47A07EF06EF4E2471C91D8569 /* Pods_StarWarsPeople.framework */,
+				60EE193DF8F3C7E7F3D26198B426E257 /* Pods_StarWarsPeopleTests.framework */,
+				67568024A5D11F3C99C5F95B12014C4E /* Pods_StarWarsPeopleUITests.framework */,
+				92E412F788EC556E11E99F5C1E21810B /* SAMKeychain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93E5D5933DA85D431E0C4397C69A7ACE /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7885A48783B5BD0B903BC842D749A00D /* OHHTTPStubsResponse+JSON.h */,
+				C0FC06896CCF675EF5FB64E363A4BAB8 /* OHHTTPStubsResponse+JSON.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		9C1290CDFA2285BB7E76FD0BBBC4812D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAE210435E8252119DD0DD066C31F868 /* SAMKeychain.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AB9B6554419BF1F6A0896975B2D69AA5 /* OHPathHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				141BD40F3CEC4F9C248D45554B52EAD9 /* OHPathHelpers.h */,
+				36A9BAB405A65FD8AD6E749F719E10EC /* OHPathHelpers.m */,
+			);
+			name = OHPathHelpers;
+			sourceTree = "<group>";
+		};
+		B1BB0CAE9EE1285902863D421570B9A3 /* Pods-StarWarsPeopleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9669EF3C1EB3A14C7141549872080 /* Info.plist */,
+				11AE4DBD59BD164F4B7E0FE0E43A755B /* Pods-StarWarsPeopleUITests.modulemap */,
+				244CC3121CEFB209DD242C38F4933B86 /* Pods-StarWarsPeopleUITests-acknowledgements.markdown */,
+				0AC2A9255855C1FBBB840FCD4B6C8D9F /* Pods-StarWarsPeopleUITests-acknowledgements.plist */,
+				EE8D8ABD4F0FD0C24BFC7B916045292E /* Pods-StarWarsPeopleUITests-dummy.m */,
+				96BA770263C6AE437552A317ED99229D /* Pods-StarWarsPeopleUITests-frameworks.sh */,
+				16FA21963B522C2499C8E99163848A47 /* Pods-StarWarsPeopleUITests-resources.sh */,
+				F56D172039A1650FE7C300E15A3F802E /* Pods-StarWarsPeopleUITests-umbrella.h */,
+				0C6B42A8E54EBFC7B93B287F46C06C3B /* Pods-StarWarsPeopleUITests.debug.xcconfig */,
+				E8295234D456B292653110E779ACE732 /* Pods-StarWarsPeopleUITests.release.xcconfig */,
+			);
+			name = "Pods-StarWarsPeopleUITests";
+			path = "Target Support Files/Pods-StarWarsPeopleUITests";
+			sourceTree = "<group>";
+		};
+		B1F9A3C8223CA8EC4500BCA7100DE71E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1A4FAF7439CFFE61363555A8BE62C017 /* CFNetwork.framework */,
+				4401E344D9B0F5E42514B0E41E08FDCC /* Foundation.framework */,
+				57010B1F532490AE7D967B1BFB0B76D1 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C67C8582E51C8F38B560B6B4680D8C6C /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				FA6FB1EFF0FA19098095BEE565038C30 /* NSURLRequest+HTTPBodyTesting.h */,
+				1A28F4F04C9CE73061573B0195A831F7 /* NSURLRequest+HTTPBodyTesting.m */,
+				0367B246C00E4732A0F479841AA27617 /* OHHTTPStubs+NSURLSessionConfiguration.m */,
+				FAFDFA13CC1B0C6CF66703AF63E1166C /* OHHTTPStubsMethodSwizzling.h */,
+				23966B7078A64DB619F31FC10091F9AE /* OHHTTPStubsMethodSwizzling.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				4A4796BDE21A11CBACEEC74E40A9C32F /* Pods */,
+				93D28621BB3454A061DFE3B7DEF23995 /* Products */,
+				2223A69ED8562D0C403CD3292A2C6AF2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D799B6A43F27A1E65C7A8510065FB51E /* Pods-StarWarsPeopleTests */ = {
+			isa = PBXGroup;
+			children = (
+				57BEB7BEDC9F298683CA42F04D32A05C /* Info.plist */,
+				79F39F8C60A7D52CCDEF65EB3BC91A5C /* Pods-StarWarsPeopleTests.modulemap */,
+				ABAD27271A7BA171A5A2F24669DDE6EF /* Pods-StarWarsPeopleTests-acknowledgements.markdown */,
+				F7A13EDAD7A491AD04ABECE149844AD3 /* Pods-StarWarsPeopleTests-acknowledgements.plist */,
+				ECE41B7347497525A2A29AD5F176B621 /* Pods-StarWarsPeopleTests-dummy.m */,
+				63404D1686EB6A7D6C7A29BDD0BD6621 /* Pods-StarWarsPeopleTests-frameworks.sh */,
+				4AED570BAB553E08230E075ED51F7BC1 /* Pods-StarWarsPeopleTests-resources.sh */,
+				24EC4FAF43A0A5A944DC12A8105F571E /* Pods-StarWarsPeopleTests-umbrella.h */,
+				572098ECCC15A63A7BDD8BF0EFBE1E54 /* Pods-StarWarsPeopleTests.debug.xcconfig */,
+				50FEEF0ECA913195404694E29BC71EEB /* Pods-StarWarsPeopleTests.release.xcconfig */,
+			);
+			name = "Pods-StarWarsPeopleTests";
+			path = "Target Support Files/Pods-StarWarsPeopleTests";
+			sourceTree = "<group>";
+		};
+		D88BFA086E2D2614955590377402A5CA /* Pods-StarWarsPeople */ = {
+			isa = PBXGroup;
+			children = (
+				A1CEA8A341DA050836B9E28CCFD622EA /* Info.plist */,
+				90A20B8FD5E5FF456701ACCEAEB0A577 /* Pods-StarWarsPeople.modulemap */,
+				9E4C6DF48D4EE0970680D6C313123408 /* Pods-StarWarsPeople-acknowledgements.markdown */,
+				DEAB696143A4F71BC6FE693F970A48F8 /* Pods-StarWarsPeople-acknowledgements.plist */,
+				0ECF15CB00D1F4AB8740E3DD8C8050EA /* Pods-StarWarsPeople-dummy.m */,
+				03C37EFF87B24D2F17053BEA93FE982E /* Pods-StarWarsPeople-frameworks.sh */,
+				68A2789F5A0A82CCF87A8D73ADD8C0FC /* Pods-StarWarsPeople-resources.sh */,
+				059625BD998D059DCBE5725DAAA9A673 /* Pods-StarWarsPeople-umbrella.h */,
+				8F85DD959BE965D96EC89BE05B840CF0 /* Pods-StarWarsPeople.debug.xcconfig */,
+				267B2717EFE364F3E0D1838EE66BB1F0 /* Pods-StarWarsPeople.release.xcconfig */,
+			);
+			name = "Pods-StarWarsPeople";
+			path = "Target Support Files/Pods-StarWarsPeople";
+			sourceTree = "<group>";
+		};
+		F02390ED9D12E0A941E8E1F181833770 /* SAMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				B034DCC59C3226FED6923F9D06AE94C2 /* SAMKeychain.h */,
+				54C24AC83E21703966B46DD4B9B385D1 /* SAMKeychain.m */,
+				190BD9719E3F746D5B87396ACA56DF13 /* SAMKeychainQuery.h */,
+				FD223CFDFEFABF328AD6138CF2E874BA /* SAMKeychainQuery.m */,
+				9C1290CDFA2285BB7E76FD0BBBC4812D /* Resources */,
+				32283F9C93DF1566FDF75EEC1223BCBE /* Support Files */,
+			);
+			name = SAMKeychain;
+			path = SAMKeychain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2569F568C110AFA50DCC58AE57F132FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEFAA7AD59E8F3D1A500EEDA78427E3 /* Pods-StarWarsPeople-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3091CC2E1FF6E89D260DE4A0C498650B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF684539C61A28A54781C4968ECB607 /* Pods-StarWarsPeopleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8DB086669771B57B1B28E3E30AFDDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E53462EF04A9CE8818119F299D8E4A /* Pods-StarWarsPeopleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE385C15F5BEE9FFE8D5252C68E3BCA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE916FD2B10B5C26E379ED127AFD1997 /* Compatibility.h in Headers */,
+				EB329EF68B9E249E32D39AEF0C95A16D /* NSURLRequest+HTTPBodyTesting.h in Headers */,
+				FC482A1E6054FD0A6A54551E9236C6C8 /* OHHTTPStubs-umbrella.h in Headers */,
+				202477F04C14A14594E1B53C6DDECE99 /* OHHTTPStubs.h in Headers */,
+				4A39A4B78035E8D6DAD93CC24381B5A0 /* OHHTTPStubsMethodSwizzling.h in Headers */,
+				509BD9F2CAC137497BF1A3C14E4CC077 /* OHHTTPStubsResponse+JSON.h in Headers */,
+				510F88CDBEE47F465FC35D0F54290D7C /* OHHTTPStubsResponse.h in Headers */,
+				FEB50E7D731934CE2B0E4A19CB2ED8FB /* OHPathHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0C27F3B675A0C163D8A7B17EBF841D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31BA4909DF65B6A1F79EAACC5D6AE45C /* SAMKeychain-umbrella.h in Headers */,
+				782BB86ED5055BB7C9B066D529FE6B2E /* SAMKeychain.h in Headers */,
+				83473C87CA0CA01D74C321662F5D0D03 /* SAMKeychainQuery.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3D8BE7205719166638710F3F25D1EB49 /* Pods-StarWarsPeopleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97095B81C7F24FAF9E7FD8F9FCA0E124 /* Build configuration list for PBXNativeTarget "Pods-StarWarsPeopleTests" */;
+			buildPhases = (
+				3091CC2E1FF6E89D260DE4A0C498650B /* Headers */,
+				D700AA9C79C10956193C08FA65BD5F10 /* Sources */,
+				B0F341E8A81FE092A67DAA5A4574481E /* Frameworks */,
+				3C48626330C39461EB7A3A5CF26AC30A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2D1BE195E5E429EFEB07EC3D23B5FD7 /* PBXTargetDependency */,
+				354D802A3DB030493CCED87776577D46 /* PBXTargetDependency */,
+			);
+			name = "Pods-StarWarsPeopleTests";
+			productName = "Pods-StarWarsPeopleTests";
+			productReference = 60EE193DF8F3C7E7F3D26198B426E257 /* Pods_StarWarsPeopleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2DCCEE6F62617BD49795ACB4AEA152C /* OHHTTPStubs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D40700C53CC0397FA9745F1B7445CD05 /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */;
+			buildPhases = (
+				DE385C15F5BEE9FFE8D5252C68E3BCA5 /* Headers */,
+				A2BE840282E13757917A73967A6C9E85 /* Sources */,
+				BDC48D1EB19432A127D8A8D79442DD4B /* Frameworks */,
+				879EB344AD752C69A7CEA495A4005008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OHHTTPStubs;
+			productName = OHHTTPStubs;
+			productReference = 50D3876778DC66C39FF9923DA80294F7 /* OHHTTPStubs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D340C5F6AD36492C90A8493B5FF8DAD8 /* Pods-StarWarsPeopleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14619A72F5B9BC59EAF645C2B0530E79 /* Build configuration list for PBXNativeTarget "Pods-StarWarsPeopleUITests" */;
+			buildPhases = (
+				AD8DB086669771B57B1B28E3E30AFDDA /* Headers */,
+				52D701530ADD8C6F84A3F9E1D2197C5F /* Sources */,
+				150DB227478C4333692C3DA07BD1A902 /* Frameworks */,
+				DFAEF6F57A219E4F713B804BEFA19E80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D84465B5418320EF35D71F4B286AD24E /* PBXTargetDependency */,
+			);
+			name = "Pods-StarWarsPeopleUITests";
+			productName = "Pods-StarWarsPeopleUITests";
+			productReference = 67568024A5D11F3C99C5F95B12014C4E /* Pods_StarWarsPeopleUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC2D784CC1515B93562F634D903F4FF4 /* Pods-StarWarsPeople */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE719CFACA75F2425C1A1C00ECA9558 /* Build configuration list for PBXNativeTarget "Pods-StarWarsPeople" */;
+			buildPhases = (
+				2569F568C110AFA50DCC58AE57F132FA /* Headers */,
+				CF3AFDAB91954884A4739AF12615540E /* Sources */,
+				A1843D0410E7BCBAA54FE8138B696DBF /* Frameworks */,
+				4A70FA799CF8C116610A1F82575E2705 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDAF81A2A2F8802582F18870A7138D6F /* PBXTargetDependency */,
+			);
+			name = "Pods-StarWarsPeople";
+			productName = "Pods-StarWarsPeople";
+			productReference = C8A421F47A07EF06EF4E2471C91D8569 /* Pods_StarWarsPeople.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ECDD3751C53F4F1B9E8A5FF45D6EB879 /* SAMKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58242753B8FD77866CAFD35841AD602C /* Build configuration list for PBXNativeTarget "SAMKeychain" */;
+			buildPhases = (
+				EA0C27F3B675A0C163D8A7B17EBF841D /* Headers */,
+				3CAF64F63EE2343B4B02E7A5C4412EE6 /* Sources */,
+				B6BF615549024DC3F44A70B73DCA5F85 /* Frameworks */,
+				77427E50733CB0D70EC25FFBE7888E22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAMKeychain;
+			productName = SAMKeychain;
+			productReference = 92E412F788EC556E11E99F5C1E21810B /* SAMKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 93D28621BB3454A061DFE3B7DEF23995 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2DCCEE6F62617BD49795ACB4AEA152C /* OHHTTPStubs */,
+				DC2D784CC1515B93562F634D903F4FF4 /* Pods-StarWarsPeople */,
+				3D8BE7205719166638710F3F25D1EB49 /* Pods-StarWarsPeopleTests */,
+				D340C5F6AD36492C90A8493B5FF8DAD8 /* Pods-StarWarsPeopleUITests */,
+				ECDD3751C53F4F1B9E8A5FF45D6EB879 /* SAMKeychain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C48626330C39461EB7A3A5CF26AC30A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A70FA799CF8C116610A1F82575E2705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77427E50733CB0D70EC25FFBE7888E22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBFAE0EAC6127AF4943957BD8EBA1635 /* SAMKeychain.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		879EB344AD752C69A7CEA495A4005008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFAEF6F57A219E4F713B804BEFA19E80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CAF64F63EE2343B4B02E7A5C4412EE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5379FA9AC4F918BA5CE69736605EB9 /* SAMKeychain-dummy.m in Sources */,
+				457F99DF18D792E3FFF5CB0C6C89F3D4 /* SAMKeychain.m in Sources */,
+				0099583816E484A850740FA57873BF01 /* SAMKeychainQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D701530ADD8C6F84A3F9E1D2197C5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630CC61CD8E8D3FCA2ECD2EB11BD2351 /* Pods-StarWarsPeopleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2BE840282E13757917A73967A6C9E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693D679E85F65B306E9B8F6150AC2EDC /* NSURLRequest+HTTPBodyTesting.m in Sources */,
+				42FFCF3626A2DCF45281BDA0ED0D56F6 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */,
+				12D996026216DBA7097BD3780D43CA6C /* OHHTTPStubs-dummy.m in Sources */,
+				B2A5DCD86ABD6E208D51E43FE6985C43 /* OHHTTPStubs.m in Sources */,
+				004A74CA4395C8EC4E3630F5CDAF471C /* OHHTTPStubsMethodSwizzling.m in Sources */,
+				D25C0249782213EBD8F08D11389D4474 /* OHHTTPStubsResponse+JSON.m in Sources */,
+				A43D16ED88A2EB9E1E8F8D34877DFBAC /* OHHTTPStubsResponse.m in Sources */,
+				21BBCE7C08C4CE2FE17D72FE211E6536 /* OHHTTPStubsSwift.swift in Sources */,
+				343AEECF9B467F9B476B135CA6DD4835 /* OHPathHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3AFDAB91954884A4739AF12615540E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18DD994B66F6EE70E1EB83367683324 /* Pods-StarWarsPeople-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D700AA9C79C10956193C08FA65BD5F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F220ACA207A8BC3E0814BAF4DD0E912 /* Pods-StarWarsPeopleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		354D802A3DB030493CCED87776577D46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-StarWarsPeople";
+			target = DC2D784CC1515B93562F634D903F4FF4 /* Pods-StarWarsPeople */;
+			targetProxy = 6BF306D3C980F5B198BDCB4616E1A58D /* PBXContainerItemProxy */;
+		};
+		C2D1BE195E5E429EFEB07EC3D23B5FD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OHHTTPStubs;
+			target = B2DCCEE6F62617BD49795ACB4AEA152C /* OHHTTPStubs */;
+			targetProxy = 0952CF22F7672F80F85417582E23ACD1 /* PBXContainerItemProxy */;
+		};
+		D84465B5418320EF35D71F4B286AD24E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-StarWarsPeople";
+			target = DC2D784CC1515B93562F634D903F4FF4 /* Pods-StarWarsPeople */;
+			targetProxy = F5017EB0D01FF72EB4D5769DFAB3D42B /* PBXContainerItemProxy */;
+		};
+		FDAF81A2A2F8802582F18870A7138D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SAMKeychain;
+			target = ECDD3751C53F4F1B9E8A5FF45D6EB879 /* SAMKeychain */;
+			targetProxy = E887E9791AFDC01EF5769C8B5253CC81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		42A6C010B1AE268805A3A263273ED4F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50FEEF0ECA913195404694E29BC71EEB /* Pods-StarWarsPeopleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StarWarsPeopleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StarWarsPeopleTests/Pods-StarWarsPeopleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42B74443B5A0387AE5D17BDE7FD54A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267B2717EFE364F3E0D1838EE66BB1F0 /* Pods-StarWarsPeople.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StarWarsPeople/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StarWarsPeople/Pods-StarWarsPeople.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F5FC6B14B8DA10AC18848D227D32942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8295234D456B292653110E779ACE732 /* Pods-StarWarsPeopleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StarWarsPeopleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StarWarsPeopleUITests/Pods-StarWarsPeopleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		694A4C9CBE3C324841FE74B92D8E186F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B182B5B0F3F39F7BEEC800C794242188 /* SAMKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SAMKeychain/SAMKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAMKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SAMKeychain/SAMKeychain.modulemap";
+				PRODUCT_MODULE_NAME = SAMKeychain;
+				PRODUCT_NAME = SAMKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79E385A51609B4FAA9FF7B50B886AEB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B182B5B0F3F39F7BEEC800C794242188 /* SAMKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SAMKeychain/SAMKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAMKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SAMKeychain/SAMKeychain.modulemap";
+				PRODUCT_MODULE_NAME = SAMKeychain;
+				PRODUCT_NAME = SAMKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD00FB0F421D537E6925BA61E3BC7EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C6B42A8E54EBFC7B93B287F46C06C3B /* Pods-StarWarsPeopleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StarWarsPeopleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StarWarsPeopleUITests/Pods-StarWarsPeopleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B61ABCC8DE4E66F818D0B682DA1E76BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A1F986C9AC82550AB9D28E430EC6C2 /* OHHTTPStubs.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D234CDA64AE12B115F1B6256221DAD59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E2EB35EC3E5A0D101C0408F47ABA4004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EE563592509D4F809CE2A883166B3B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572098ECCC15A63A7BDD8BF0EFBE1E54 /* Pods-StarWarsPeopleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StarWarsPeopleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StarWarsPeopleTests/Pods-StarWarsPeopleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F40101F6185221F62EBBA7E5C9AA20BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F85DD959BE965D96EC89BE05B840CF0 /* Pods-StarWarsPeople.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StarWarsPeople/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StarWarsPeople/Pods-StarWarsPeople.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FCE4582E65B2333A832E61C7AF8F8E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A1F986C9AC82550AB9D28E430EC6C2 /* OHHTTPStubs.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				PRODUCT_MODULE_NAME = OHHTTPStubs;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14619A72F5B9BC59EAF645C2B0530E79 /* Build configuration list for PBXNativeTarget "Pods-StarWarsPeopleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD00FB0F421D537E6925BA61E3BC7EE5 /* Debug */,
+				5F5FC6B14B8DA10AC18848D227D32942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2EB35EC3E5A0D101C0408F47ABA4004 /* Debug */,
+				D234CDA64AE12B115F1B6256221DAD59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58242753B8FD77866CAFD35841AD602C /* Build configuration list for PBXNativeTarget "SAMKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E385A51609B4FAA9FF7B50B886AEB3 /* Debug */,
+				694A4C9CBE3C324841FE74B92D8E186F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97095B81C7F24FAF9E7FD8F9FCA0E124 /* Build configuration list for PBXNativeTarget "Pods-StarWarsPeopleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE563592509D4F809CE2A883166B3B23 /* Debug */,
+				42A6C010B1AE268805A3A263273ED4F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D40700C53CC0397FA9745F1B7445CD05 /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61ABCC8DE4E66F818D0B682DA1E76BE /* Debug */,
+				FCE4582E65B2333A832E61C7AF8F8E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFE719CFACA75F2425C1A1C00ECA9558 /* Build configuration list for PBXNativeTarget "Pods-StarWarsPeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F40101F6185221F62EBBA7E5C9AA20BE /* Debug */,
+				42B74443B5A0387AE5D17BDE7FD54A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

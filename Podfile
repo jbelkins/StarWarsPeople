@@ -5,7 +5,7 @@ target 'StarWarsPeople' do
 
   use_frameworks!
 
-  pod "SAMKeychain"
+  pod 'SAMKeychain'
 
   target 'StarWarsPeopleTests' do
     inherit! :search_paths
