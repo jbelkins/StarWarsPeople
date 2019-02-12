@@ -1,0 +1,18 @@
+{
+    "count": 2,
+    "next": "https://swapi.co/api/people/?page=2",
+    "previous": null,
+    "results": [{
+        "name": "Dark Helmet",
+        "height": "100",
+        "hair_color": "Brown",
+        "eye_color": "Black",
+        "birth_year": "1984"
+    }, {
+        "name": "Barf",
+        "height": "200",
+        "hair_color": "Brown",
+        "eye_color": "Brown",
+        "birth_year": "1984"
+    }]
+}
