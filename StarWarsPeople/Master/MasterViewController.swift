@@ -21,7 +21,9 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
-        dataSource = MasterDataSource(peopleClient: PeopleClient(swapi: SWAPIAdapter(urlSession: URLSession.shared)))
+        let swapi = SWAPIAdapter(urlSession: URLSession.shared)
+        let peopleClient = PeopleClient(swapi: swapi)
+        dataSource = MasterDataSource(peopleClient: peopleClient)
         tableView.dataSource = dataSource
         loadPeople()
     }
